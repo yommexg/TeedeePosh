@@ -27,8 +27,8 @@ yarn-error.log*
 /server/brandImgUploads
 /server/categoryImgUploads
 /server/productsImgUploads
-# /server/logs/*.txt
-# /server/logs/regLog.txt
+/server/logs/*.txt
+/server/logs/regLog.txt
 
 .prettierrc
 .server/env
