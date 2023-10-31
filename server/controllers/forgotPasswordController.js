@@ -1,12 +1,6 @@
-const twilio = require("twilio");
 const nodemailer = require("nodemailer");
 const bcrypt = require("bcrypt");
 const User = require("../model/User");
-
-const client = twilio(
-  process.env.TWILIO_ACCOUNT_SID,
-  process.env.TWILIO_AUTH_TOKEN
-);
 
 // Helper function to generate OTP
 function generateOTP() {
@@ -29,14 +23,6 @@ const handleForget = async (req, res) => {
   // Generate OTP
   const otp = generateOTP();
 
-  // Send OTP via SMS (Twilio)
-  // client.messages
-  //   .create({
-  //     body: `Your OTP is: ${otp}. Do not share with anyone`,
-  //     from: process.env.TWILIO_PHONE_NUMBER,
-  //     to: foundUser.phoneNumber,
-  //   })
-  // .then(() => {
   // Send OTP via Email (Nodemailer)
   const transporter = nodemailer.createTransport({
     service: "GMAIL", // Use your email service provider
@@ -62,11 +48,6 @@ const handleForget = async (req, res) => {
       res.send(otp);
     }
   });
-  // })
-  // .catch((error) => {
-  //   console.error("Error sending OTP via SMS:", error);
-  //   res.status(500).json({ error: "Failed to send OTP via SMS" });
-  // });
 };
 
 const handleResetPassword = async (req, res) => {
