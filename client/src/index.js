@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
 import "./index.css";
 import App from "./Apps/App";
@@ -12,6 +13,8 @@ import { ProductProvider } from "./context/ProductProvider";
 import { CheckoutProvider } from "./context/CheckoutProvider";
 import { CountriesProvider } from "./context/CountriesProvider";
 import { ContentProvider } from "./context/ContentProvider";
+
+if (process.env.NODE_ENV === "production") disableReactDevTools();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
