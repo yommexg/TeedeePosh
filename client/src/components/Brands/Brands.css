@@ -1,0 +1,21 @@
+.brand-container .brand-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  /* border: 2px dashed var(--color-bg); */
+  margin: 1% 2%;
+  padding: 3%;
+}
+
+.brand-container .brand-title-container img {
+  border-radius: 10%;
+  box-shadow: 1px 2px 2px 1px var(--color-bg);
+}
+
+.brand-container .brand-title-container h1 {
+  font-style: italic;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 20px;
+}

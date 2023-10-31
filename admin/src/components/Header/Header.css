@@ -1,0 +1,41 @@
+.header-container {
+  height: 60px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 300;
+  background-color: navy;
+  align-items: center;
+}
+
+.sidebar-icon-container {
+  color: rgb(1, 1, 122);
+  background-color: white;
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.brand-name-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name-container p {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.search-icon-container .search-icon {
+  border: 2px solid white;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}

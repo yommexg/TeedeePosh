@@ -1,0 +1,58 @@
+.banner-container {
+  padding: 20px;
+  background-color: rgba(232, 236, 245, 0.594);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.banner-product {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image {
+  margin-top: 10px;
+  padding: 2px;
+  margin-left: 5%;
+}
+
+.banner-product select {
+  padding: 10px;
+  margin-left: 10px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.banner-details textarea {
+  width: 85%;
+  height: 250px;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner-time input {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.banner-middle-text input {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 13px;
+  font-size: 18px;
+}
+
+.largetext textarea {
+  width: 85%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 150px;
+  font-size: 20px;
+}

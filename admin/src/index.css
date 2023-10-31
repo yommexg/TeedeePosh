@@ -1,0 +1,14 @@
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

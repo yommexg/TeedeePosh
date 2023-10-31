@@ -1,0 +1,135 @@
+.sidebar-container {
+  background-color: var(--color-white);
+  width: 248px;
+  height: 58vh;
+  display: flex;
+  transition: 850ms;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  position: fixed;
+  left: 0;
+  top: 124px;
+  z-index: 100;
+  box-shadow: 1px 2px 1px black;
+}
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+.home-container .active,
+.home-container .not-active {
+  display: flex;
+  gap: 10px;
+}
+
+.home-container .active p,
+.home-container .not-active p,
+.home-sidebar-icon {
+  color: var(--color-primary-variant);
+  font-size: 23px;
+}
+.home-container .active p,
+.home-container .active .home-sidebar-icon {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.sidebar-heads {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.sidebar-heads .heads-not-active,
+.sidebar-heads .heads-active {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 20px;
+  padding: 8px;
+}
+
+.sidebar-heads .heads-active {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+
+.sidebar-cat-brand {
+  overflow-y: auto;
+  flex-wrap: wrap;
+  height: max-content;
+  padding-bottom: 50px;
+}
+
+.sidebar-cat-brand .active,
+.sidebar-cat-brand .not-active {
+  text-transform: capitalize;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border-right-width: 2px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+  padding: 7px 20px;
+}
+
+.sidebar-cat-brand img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.sidebar-cat-brand .not-active p:hover {
+  color: var(--color-primary-variant);
+}
+
+.sidebar-cat-brand .active p {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar-container {
+    height: 57vh;
+  }
+}
+@media screen and (max-width: 812px) {
+  .sidebar-container {
+    height: 72.5vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar-container {
+    width: 80%;
+    height: 91vh;
+    background: var(--color-light);
+    box-shadow: 1px 2px 1px var(--color-bg);
+    top: 60px;
+    /* float: left;
+    position: relative; */
+  }
+
+  .close-sidebar-icon {
+    color: var(--color-light);
+    background-color: var(--color-bg-variant);
+    padding: 2px;
+    border-radius: 50%;
+  }
+  .sidebar-cat-brand {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .close-sidebar-icon {
+    display: none;
+  }
+}

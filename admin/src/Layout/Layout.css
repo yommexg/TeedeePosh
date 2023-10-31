@@ -1,0 +1,12 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.toaster {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  z-index: 20000;
+}
+
