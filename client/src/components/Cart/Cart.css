@@ -213,7 +213,7 @@
 .cart-bottom-container .cart-total-price-container p {
   color: var(--color-primary-variant);
   font-style: italic;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .cart-bottom-container .cart-total-price-container p span {
@@ -271,6 +271,9 @@
     margin-top: 70px;
   }
 
+    .cart-small-product-details img {
+    border-radius: 50%;
+    }
   .cart-small-product {
     display: flex;
     justify-content: space-between;
