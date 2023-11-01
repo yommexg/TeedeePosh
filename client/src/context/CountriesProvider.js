@@ -18,7 +18,7 @@ export const CountriesProvider = ({ children }) => {
     const fetchCountries = async () => {
       try {
         const response = await axios.get(
-          "https://api.geonames.org/countryInfoJSON",
+          "https://secure.geonames.org/countryInfoJSON",
           {
             params: {
               username: "yomi",
@@ -49,7 +49,7 @@ export const CountriesProvider = ({ children }) => {
       if (selectedCountryCode) {
         try {
           const response = await axios.get(
-            "https://api.geonames.org/childrenJSON",
+            "https://secure.geonames.org/childrenJSON",
             {
               params: {
                 geonameId: selectedCountryCode,
@@ -75,7 +75,7 @@ export const CountriesProvider = ({ children }) => {
       if (selectedStateCode) {
         try {
           const response = await axios.get(
-            "https://api.geonames.org/childrenJSON",
+            "https://secure.geonames.org/childrenJSON",
             {
               params: {
                 geonameId: selectedStateCode,
