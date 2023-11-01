@@ -71,14 +71,14 @@ const CartSmall = () => {
                       };base64,${arrayBufferToBase64(
                         item?.productImg[0].data.data
                       )}`}
-                      height={100}
-                      width={80}
+                      height={50}
+                      width={50}
                       alt={item?.name}
                     />
                   </div>
                   <div>
                     <p style={{ fontWeight: 700 }}>{item?.name}</p>
-                    <p style={{ fontSize: "9px", fontWeight: 100 }}>
+                    <p style={{ fontSize: "6px", fontWeight: 100 }}>
                       {item?._id}
                     </p>
                     <p>Size: {item?.selectedproductSize}</p>
