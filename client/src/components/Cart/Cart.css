@@ -186,11 +186,11 @@
 }
 
 .cart-bottom-container button {
-  padding: 10px 30px;
+  padding: 10px;
   border: none;
   background-color: var(--color-bg-variant);
   color: var(--color-white);
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
   transition: opacity 0.3s;
 }
